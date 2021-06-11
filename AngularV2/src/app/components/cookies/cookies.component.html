@@ -1,0 +1,14 @@
+<!--<div class="contaner" #ctn>
+  <h1>Este site usa cookies</h1>
+  <button (click)="aceitarCookies(ctn)">Aceitar</button>
+</div>
+-->
+
+
+<body>
+  <div [ngClass]="{'show': !cookies, 'hide': cookies, 'hide2': closed}">
+    <h1>This website employs cookies to improve your user experience!</h1>
+    <button (click)="saveOnCookies()">Allow cookies</button>
+    <button (click)="close()">Close</button>
+  </div>
+</body>

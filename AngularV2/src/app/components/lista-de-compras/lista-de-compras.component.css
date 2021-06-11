@@ -1,0 +1,57 @@
+
+
+body{
+  margin-top: 130px;
+  margin-left: 50px;
+}
+
+
+button{
+  padding: 8px;
+  margin: 20px 20px 0px 0px;
+}
+
+input{
+  padding: 3px;
+  margin: 20px 20px 0px 0px;
+}
+
+.pushable {
+  background: #1f6180;
+  border-radius: 12px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+}
+.front {
+  display: block;
+  padding: 12px 38px;
+  border-radius: 12px;
+  font-size: 16px;
+  background: #003147;
+  color: white;
+  transform: translateY(-6px);
+}
+
+.pushable:active .front {
+  transform: translateY(-2px);
+}
+
+.mark{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.mark2{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -40px;
+}
+
+

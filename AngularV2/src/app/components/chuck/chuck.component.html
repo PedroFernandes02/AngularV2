@@ -1,0 +1,19 @@
+<body>
+  <h2>{{piada}}</h2>
+  <div class="center">
+    <div class="inputbox">
+      <input type="text" required="required" #valor>
+      <span>Search</span>
+    </div>
+  </div>
+  <button (click)="getJoke()" class="pushable">
+    <span class="front">Randow Joke!</span>
+  </button>
+  <button (click)="getMoreJokes(valor.value)" class="pushable">
+    <span class="front">Random Cat Joke!</span>
+  </button>
+
+  <div *ngFor="let item of piadas.result">
+    <h3>{{item.value}}</h3>
+  </div>
+</body>

@@ -1,0 +1,24 @@
+<div class="mark">
+  <h3>Adicionar artigo</h3>
+  <div class="center">
+    <form>
+      <div class="inputbox">
+        <input type="text" required="required" #nome>
+        <span>Nome do Artigo</span>
+      </div>
+      <div class="inputbox">
+        <input type="text" required="required" #preco>
+        <span>Preço</span>
+      </div>
+    </form>
+    <!--<a>Nome do artigo: </a><input type="text" required="required" #nome>
+    <a>Preço: </a><input type="text" required="required" #preco>-->
+  </div>
+<button (click)="AdicionarLista(nome.value, preco.value)" class="pushable" >
+  <span class="front">ADD</span>
+</button>
+<!--
+<div *ngFor="let artigo of listaService.listaCompras">
+  <p class="m-5" [ngClass]="{'comprados' : artigo.carrinho}">{{artigo.nome}} {{artigo.preco}}€</p>
+</div>-->
+</div>
