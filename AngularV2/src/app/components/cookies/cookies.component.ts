@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class CookiesComponent implements OnInit {
 
   constructor() { }
-/*
+
   ngOnInit(): void {
   }
 
@@ -23,32 +23,5 @@ export class CookiesComponent implements OnInit {
   lerCookies(){
     this.aceiteiACookie = localStorage.getItem("cookie") == "1" ? true : false;
   }
-*/
-
-ngOnInit(): void {
-  this.getCookies();
-}
-
-cookies: boolean;
-closed: boolean = false;
-
-// save cookies
-saveOnCookies(): any {
-  
-
-
-
-}
-
-// get cookies
-getCookies(): any {
-  this.cookies = localStorage.getItem('cookies') == 'accepted' ? true : false;
-}
-
-close() {
-  this.closed = true;
-}
-
-
 
 }

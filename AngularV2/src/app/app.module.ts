@@ -17,8 +17,6 @@ import { AddComponent } from './components/lista-de-compras/add/add.component';
 import { BuyComponent } from './components/lista-de-compras/buy/buy.component';
 import { PColorComponent } from './components/p-color/p-color.component';
 import { SColorComponent } from './components/p-color/s-color/s-color.component';
-import { AnimeComponent } from './components/anime/anime.component';
-import { DetalheComponent } from './components/anime/detalhe/detalhe.component';
 import { ChuckComponent } from './components/chuck/chuck.component';
 
 
@@ -37,8 +35,6 @@ import { ChuckComponent } from './components/chuck/chuck.component';
     BuyComponent,
     PColorComponent,
     SColorComponent,
-    AnimeComponent,
-    DetalheComponent,
     ChuckComponent
 
   ],

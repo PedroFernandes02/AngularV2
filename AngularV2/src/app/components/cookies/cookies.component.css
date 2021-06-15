@@ -1,110 +1,46 @@
-/*.contaner{
+.contaner{
   position: fixed;
   bottom: 0;
-  height: 25vh;
+  height: 21vh;
   background-color: #34495e;
-  width: 110vw;
+  width: 105vw;
   margin-left: -10px;
   display: flex;
   align-items: center;
   justify-content: space-around;
   animation-name: subir;
-  animation-duration: 2s;
+  animation-duration: 3s;
   color: white;
-}
-
-button{
-  width: 90px;
-  height: 40px;
-  border-radius: 8%;
-
 }
 
 @keyframes subir{
   from {bottom: -25vh;}
   to {bottom: 0vh;}
 }
-*/
 
-
-div {
-  position: fixed;
-  top: auto;
-  bottom: -20vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  background: rgba(0, 0, 0, 0.8);
-  width: 100%;
-  height: 15%;
-  transition: bottom 350ms ease;
+button{
+  padding: 8px;
+  margin: 20px 20px 0px 0px;
 }
 
-div h1 {
-  color: white;
-  font-size: 1.3vw;
-  font-weight: 500;
-}
-
-div button {
-  background: #fd7070;
-  color: #fff;
-  border-radius: 0.3rem;
-  font-size: 1.5vw;
-  font-weight: 800;
-  font-variant: small-caps;
-  text-align: center;
-  outline: none;
+.pushable {
+  background: #fff;
+  border-radius: 12px;
   border: none;
-  width: 15%;
-  height: 50%;
+  padding: 0;
   cursor: pointer;
+  outline-offset: 4px;
 }
-
-div button:nth-last-of-type(1) {
-  background: transparent;
-  color: #fd7070;
-  border: 2px solid #fd7070;
-  width: 10%;
-  transition: color 250ms ease, border 250ms ease;
-}
-
-div button:nth-last-of-type(1):hover {
+.front {
+  display: block;
+  padding: 12px 38px;
+  border-radius: 12px;
+  font-size: 16px;
+  background: #003147;
   color: white;
-  border: 2px solid white;
-  transition: color 250ms ease, border-color 250ms ease;
+  transform: translateY(-6px);
 }
 
-.show {
-  -webkit-animation: slideUp 350ms 1 forwards;
-  animation: slideUp 350ms 1 forwards;
-}
-
-.hide {
-  -webkit-animation: slideDown 350ms 1 forwards;
-  animation: slideDown 350ms 1 forwards;
-}
-
-.hide2 {
-  -webkit-animation: slideDown 350ms 1 forwards;
-  animation: slideDown 350ms 1 forwards;
-}
-
-@keyframes slideUp {
-  from {
-    bottom: -20vh;
-  }
-  to {
-    bottom: 0;
-  }
-}
-
-@keyframes slideDown {
-  from {
-    bottom: 0;
-  }
-  to {
-    bottom: -20vh;
-    display: none;
-  }
+.pushable:active .front {
+  transform: translateY(-2px);
 }

@@ -17,7 +17,7 @@ input{
 }
 
 .pushable {
-  background: #1f6180;
+  background: #fff; /*background: #1f6180;*/
   border-radius: 12px;
   border: none;
   padding: 0;

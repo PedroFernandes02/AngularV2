@@ -104,18 +104,14 @@
 
 /* demo stuff */
 *{
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 .container {
   background-color: #f5bd64;
   margin-top: 140px;
   height: 600px;
-}
-html, button, input, select, textarea {
-    font-family: 'Montserrat', Helvetica, sans-serif;
-    color: #bbb;
 }
 h1 {
   text-align: center;
@@ -152,44 +148,25 @@ a.more-link {
   letter-spacing: 1px;
 }
 
-a.more-link:active,
-a.more-link:hover{
-  color: #f3a93d;
+.pushable {
+  background: #fff; /*background: #1f6180;*/
+  border-radius: 12px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
 }
 
-
-/*======================
-    404 page
-=======================*/
-
-/*
-.page_404{ padding:40px 0; background:#f5bd64; font-family: 'Arvo', serif;
+.front {
+  display: block;
+  padding: 12px 38px;
+  border-radius: 12px;
+  font-size: 16px;
+  background: #003147;
+  color: white;
+  transform: translateY(-6px);
 }
 
-.page_404  img{ width:100%;}
-
-.four_zero_four_bg{
-
- background-image: url(https://cdn.dribbble.com/users/285475/screenshots/2083086/dribbble_1.gif);
-    height: 400px;
-    background-position: center;
-    background-repeat: no-repeat;
- }
-
-
- .four_zero_four_bg h1{
- font-size:80px;
- }
-
-  .four_zero_four_bg h3{
-			 font-size:80px;
-			 }
-
-			 .link_404{
-	color: #fff!important;
-    padding: 10px 20px;
-    background: #39ac31;
-    margin: 20px 0;
-    display: inline-block;}
-	.contant_box_404{ margin-top:-50px;}
-*/
+.pushable:active .front {
+  transform: translateY(-2px);
+}
